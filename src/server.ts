@@ -28,5 +28,5 @@ app.get('/architecture', ArchitectureController.index);
 app.get('/street-arts', StreetArtsController.index);
 
 app.listen(process.env.PORT || 5000, (): void => {
-  console.log(`Server started: port ${process.env.PORT || 5000}`);
+  console.log(`Server started: port ${process.env.PORT || 8080}`);
 });
