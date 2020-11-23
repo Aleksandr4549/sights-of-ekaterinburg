@@ -3,9 +3,9 @@ import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import path from 'path';
 
-import ArticleController from './controllers/Article';
-import ArchitectureController from './controllers/Architecture';
-import StreetArtsController from './controllers/StreetArts';
+import ArticleController from './src/controllers/Article';
+import ArchitectureController from './src/controllers/Architecture';
+import StreetArtsController from './src/controllers/StreetArts';
 
 dotenv.config();
 
