@@ -1,0 +1,101 @@
+@import '../../styles/variables.scss';
+
+@mixin paddingBottom {
+  padding-bottom: .3rem;
+}
+
+@mixin heightElement($type, $widhDisplay) {
+  max-height: 8rem;
+
+  @if $type == 'title' {
+    max-height: 4rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 .5rem 1rem 0;
+  padding: .5rem;
+  max-width: 24%;
+  color: $white;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid darken($white, 50%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+
+  &:nth-child(n) {
+    overflow: hidden;
+  }
+
+  &:nth-child(4n) {
+    margin: 0 0 1rem 0;
+  }
+
+  @media screen and (max-width: 900px) {
+    margin: 0 .5rem 1rem 0;
+    max-width: 32%;
+
+    &:nth-child(3n) {
+      margin: 0 0 1rem 0;
+    }
+
+    &:nth-child(4n) {
+      margin: 0 .5rem 1rem 0;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    margin: 0 .5rem 1rem 0;
+    max-width: 49%;
+
+    &:nth-child(odd) {
+      margin: 0 .5rem 1rem 0;
+    }
+
+    &:nth-child(even) {
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    margin: 0 0 1rem 0;
+    max-width: 100%;
+
+    &:nth-child(n) {
+      margin: 0 0 1rem 0;
+    }
+  }
+}
+
+.card__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card__title {
+  color: $white;
+  @include paddingBottom;
+  @include heightElement('title', 'large');
+}
+
+.card__descr {
+  display: inline-block;
+  @include heightElement('descr', 'large');
+  text-align: left;
+}
+
+.card__img {
+  & img {
+    width: 100%;
+    height: auto;
+    @include paddingBottom;
+    border: 1px solid transparent; 
+    border-radius: .5rem;
+  }
+}

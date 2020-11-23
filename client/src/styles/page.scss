@@ -1,0 +1,20 @@
+.page__container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 470px) {
+    justify-content: center;
+  }
+}
+
+.progress__container {
+  display: flex;
+  justify-content: center;
+  padding-top: calc(50vh - 7rem);
+}
+
+.page__progress__articles {
+  position: absolute;
+  bottom: -2rem;
+}

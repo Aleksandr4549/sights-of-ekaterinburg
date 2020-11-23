@@ -1,0 +1,79 @@
+@import '../../styles/variables.scss';
+
+.side__menu {
+  display: none;
+  position: relative;
+
+  @media screen and (max-width: 460px) {
+    display: block;
+  }
+}
+
+.side__menu__icon {
+  position: absolute;
+  top: -1.7rem;
+  left: 0rem;
+  z-index: 1000;
+}
+
+.side__menu__icon {
+  & nth:nth-child(n) {
+    width: 2rem;
+  }
+}
+
+.side__menu__list__container {
+  display: none;
+  position: absolute;
+  top: -2rem;
+  left: -3rem;
+  list-style: none;
+  background-color: rgba($color: #000, $alpha: .8);
+  width: 200%;
+  height: 100vh;
+  animation: side-menu-hidden 1s;
+  opacity: 0;
+  z-index: 100;
+}
+
+.side__menu__list__container_visible {
+  display: block;
+  opacity: 1;
+  animation: side-menu-visible 1s;
+}
+
+.side__menu__list {
+  margin-top: 2rem;
+  text-decoration: none;
+
+  & li {
+    display: block;
+    padding: .2rem .5rem;
+    top: 5rem;
+  }
+
+  & a {
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes side-menu-hidden {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes side-menu-visible {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

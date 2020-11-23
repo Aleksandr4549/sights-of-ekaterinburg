@@ -1,0 +1,31 @@
+{
+  "name": "sights-of-ekaterinburg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.9",
+    "@types/mongoose": "^5.10.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-body": "^1.0.5",
+    "mongoose": "^5.10.15",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node dist/server.js",
+    "dev": "cross-env NODE_ENV=development ts-node src/server.ts",
+    "nodemon": "nodemon",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client"
+  }
+}

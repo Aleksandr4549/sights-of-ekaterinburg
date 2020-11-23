@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.article__container {
+  margin: 0 auto;
+  max-width: 1000px;
+  color: $white;
+}
+
+.article__img {
+  text-align: center;
+
+  & img {
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+  }
+}
+
+.article__title {
+  font-size: 1.5rem;
+  text-align: center;
+}

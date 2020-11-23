@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+
+$defaultOpacity: .8;
+
+.header__wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $darkBlue;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem .5rem;
+
+  @media screen and (max-width: 570px) {
+    justify-content: center;
+  }
+}
+
+.header_link_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  opacity: $defaultOpacity;
+
+  & .header_link {
+    display: block;
+    padding-bottom: 3px;
+    color: $white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .header_items_bottom_line {
+    height: 1px;
+    background-color: $white;
+  }
+
+  &:hover {
+    opacity: 1;
+    transition: .3s linear all;
+  }
+
+  @media screen and (max-width: 460px) {
+    display: none;
+  }
+}
+
+.header_link_container_active {
+  opacity: 1;
+}

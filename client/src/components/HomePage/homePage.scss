@@ -1,0 +1,186 @@
+@import '../../styles/variables.scss';
+
+.home__title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 15rem);
+  text-align: center;
+  overflow-x: hidden;
+  cursor: default;
+
+  @media screen and (max-width: 280px) {
+    flex-direction: column;
+    & span {
+      display: block;
+    }
+  }
+}
+
+.home__title {
+  color: $white;
+  font-size: 3rem;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 280px) {
+    word-wrap: break-word;
+  }
+}
+
+.home__title-left {
+  animation-name: title-left;
+  animation-duration: 2s;
+}
+
+.home__title-right {
+  padding-left: 15px;
+  animation-name: title-right;
+  animation-duration: 2s;
+}
+
+@keyframes title-left {
+  from {
+    margin-right: 20rem;
+  }
+
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes title-right {
+  from {
+    margin-left: 20rem;
+  }
+
+  to {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  @keyframes title-left {
+    from {
+      margin-right: 8rem;
+    }
+  
+    to {
+      margin-right: 0;
+    }
+  }
+  
+  @keyframes title-right {
+    from {
+      margin-left: 8rem;
+    }
+  
+    to {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  @keyframes title-left {
+    from {
+      margin-right: 4rem;
+    }
+  
+    to {
+      margin-right: 0;
+    }
+  }
+  
+  @keyframes title-right {
+    from {
+      margin-left: 4rem;
+    }
+  
+    to {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  @keyframes title-left {
+    from {
+      margin-right: 2rem;
+    }
+  
+    to {
+      margin-right: 0;
+    }
+  }
+  
+  @keyframes title-right {
+    from {
+      margin-left: 2rem;
+    }
+  
+    to {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  @keyframes title-left {
+    from {
+      margin-right: 1rem;
+    }
+  
+    to {
+      margin-right: 0;
+    }
+  }
+  
+  @keyframes title-right {
+    from {
+      margin-left: 1rem;
+    }
+  
+    to {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  @keyframes title-left {
+    from {
+      margin-right: 0;
+    }
+  
+    to {
+      margin-right: 0;
+    }
+  }
+  
+  @keyframes title-right {
+    from {
+      margin-left: 0;
+    }
+  
+    to {
+      margin-left: 0;
+    }
+  }
+}

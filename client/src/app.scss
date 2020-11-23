@@ -1,0 +1,14 @@
+@import './styles/variables.scss';
+
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 3rem;
+  background-color: $darkBlue;
+  min-height: 100vh;
+
+  @media screen and (max-width: 360px) {
+    padding: 0 1rem 2rem;
+  }
+}
