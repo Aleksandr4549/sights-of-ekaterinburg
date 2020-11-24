@@ -47,4 +47,4 @@ class ArchitectureController {
   }
 }
 
-module.exports = ArchitectureController();
+export default ArchitectureController();
