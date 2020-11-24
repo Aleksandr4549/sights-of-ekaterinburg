@@ -3,8 +3,8 @@ const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 
 const ArticleController =  require('./src/controllers/Article');
-const ArchitectureController require('./src/controllers/Architecture');
-const StreetArtsController require('./src/controllers/StreetArts');
+const ArchitectureController = require('./src/controllers/Architecture');
+const StreetArtsController = require('./src/controllers/StreetArts');
 
 const path = require('path');
 
