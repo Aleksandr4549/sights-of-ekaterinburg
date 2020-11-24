@@ -28,6 +28,6 @@ app.get('/article/:id', ArticleController.show);
 app.get('/architecture', ArchitectureController.index);
 app.get('/street-arts', StreetArtsController.index);
 
-app.listen(process.env.PORT || 8080, (): void => {
+app.listen(8080, (): void => {
   console.log(`Server started: port ${process.env.PORT || 8080}`);
 });
