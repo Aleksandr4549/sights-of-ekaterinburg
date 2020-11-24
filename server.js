@@ -1,10 +1,10 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import bodyParser from 'body-parser';
+const express = require('express')
+const dotenv require('dotenv');
+const bodyParser require('body-parser');
 
-import ArticleController from './src/controllers/Article';
-import ArchitectureController from './src/controllers/Architecture';
-import StreetArtsController from './src/controllers/StreetArts';
+const ArticleController =  require('./src/controllers/Article');
+const ArchitectureController require('./src/controllers/Architecture');
+const StreetArtsController require('./src/controllers/StreetArts');
 
 const path = require('path');
 
