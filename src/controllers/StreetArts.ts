@@ -1,8 +1,8 @@
-import express from 'express';
+const express = require('express');
 
-import ArticleModel from '../models/ArticleModel';
-import getItemsPage from '../utils/getItemsPage';
-import '../core/db';
+const ArticleModel = require('../models/ArticleModel');
+const getItemsPage = require('../utils/getItemsPage');
+require('../core/db');
 
 class StreetArtsController {
   index = async (req: express.Request, res: express.Response) => {
@@ -46,4 +46,4 @@ class StreetArtsController {
   }
 }
 
-export default new StreetArtsController();
+module.exports = StreetArtsController();
