@@ -22,7 +22,7 @@
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.ts",
     "dev": "cross-env NODE_ENV=development ts-node server.ts",
     "nodemon": "nodemon",
     "client:install": "npm install --prefix client",
