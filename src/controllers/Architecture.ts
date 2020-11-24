@@ -47,4 +47,4 @@ class ArchitectureController {
   }
 }
 
-export default ArchitectureController();
+export default new ArchitectureController();
