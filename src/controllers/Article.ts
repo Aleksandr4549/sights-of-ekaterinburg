@@ -35,4 +35,4 @@ class ArticleController {
   }
 }
 
-export default ArticleController();
+export default new ArticleController();
