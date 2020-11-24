@@ -1,6 +1,6 @@
 const express = require('express')
-const dotenv require('dotenv');
-const bodyParser require('body-parser');
+const dotenv = require('dotenv');
+const bodyParser = require('body-parser');
 
 const ArticleController =  require('./src/controllers/Article');
 const ArchitectureController require('./src/controllers/Architecture');
