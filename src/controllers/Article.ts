@@ -1,6 +1,6 @@
 import express from 'express';
 
-import ArticleModel = from '../models/ArticleModel';
+import ArticleModel from '../models/ArticleModel';
 import '../core/db';
 
 class ArticleController {
