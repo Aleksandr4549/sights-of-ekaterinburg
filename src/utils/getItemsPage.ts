@@ -13,4 +13,4 @@ const getItemsPage = (arr: Array<any>, pageSize: number, currentPage: number): A
   return arr = arr.slice(startElem, endElem);
 };
 
-module.exports = getItemsPage;
+export default getItemsPage;
