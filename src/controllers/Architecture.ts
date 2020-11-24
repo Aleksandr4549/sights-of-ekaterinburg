@@ -1,8 +1,8 @@
-const express = require('express');
+import express from 'express';
 
-const ArticleModel = require('../models/ArticleModel');
-const getItemsPage = require('../utils/getItemsPage');
-require('../core/db');
+import ArticleModel from '../models/ArticleModel';
+import getItemsPage  from '../utils/getItemsPage';
+import '../core/db';
 
 class ArchitectureController {
   index = async (req: express.Request, res: express.Response) => {
