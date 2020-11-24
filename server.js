@@ -2,9 +2,9 @@ const express = require('express')
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 
-const ArticleController =  require('./src/controllers/Article');
-const ArchitectureController = require('./src/controllers/Architecture');
-const StreetArtsController = require('./src/controllers/StreetArts');
+const ArticleController =  require('./src/controllers/Article.ts');
+const ArchitectureController = require('./src/controllers/Architecture.ts');
+const StreetArtsController = require('./src/controllers/StreetArts.ts');
 
 const path = require('path');
 
