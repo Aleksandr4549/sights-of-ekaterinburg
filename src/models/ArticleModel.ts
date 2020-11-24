@@ -1,4 +1,4 @@
-import { model, Schema, Document } from 'mongoose';
+const { model, Schema, Document } = require('mongoose');
 
 export interface Article extends Document {
   category: string
