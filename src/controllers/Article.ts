@@ -1,7 +1,7 @@
-const express = require('express');
+import express from 'express';
 
-const ArticleModel = require('../models/ArticleModel');
-require('../core/db');
+import ArticleModel = from '../models/ArticleModel';
+import '../core/db';
 
 class ArticleController {
   index = async (_: express.Request, res: express.Response) => {
@@ -35,4 +35,4 @@ class ArticleController {
   }
 }
 
-module.exports = ArticleController();
+export default ArticleController();
