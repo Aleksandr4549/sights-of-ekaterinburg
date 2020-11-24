@@ -6,7 +6,7 @@ const ArticleController =  require('./src/controllers/Article.ts');
 const ArchitectureController = require('./src/controllers/Architecture.ts');
 const StreetArtsController = require('./src/controllers/StreetArts.ts');
 
-const path = require('path');
+export path from 'path';
 
 dotenv.config();
 
