@@ -1,4 +1,4 @@
-const { model, Schema, Document } = require('mongoose');
+import { model, Schema, Document } from 'mongoose';
 
 export interface Article extends Document {
   category: string
@@ -28,4 +28,4 @@ const ArticleShema = new Schema({
 
 const ArticleModel = model<Article>('Article', ArticleShema);
 
-module.exports = ArticleModel;
+export default ArticleModel;
