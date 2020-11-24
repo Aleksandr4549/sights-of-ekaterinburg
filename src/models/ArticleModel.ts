@@ -28,4 +28,4 @@ const ArticleShema = new Schema({
 
 const ArticleModel = model<Article>('Article', ArticleShema);
 
-export default ArticleModel;
+module.exports = ArticleModel;
