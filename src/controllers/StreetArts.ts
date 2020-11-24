@@ -45,4 +45,4 @@ class StreetArtsController {
     }
   }
 }
-export default StreetArtsController();
+export default new StreetArtsController();
