@@ -28,7 +28,7 @@
     "client:build": "npm run build --prefix client",
     "ts:build": "tsc",
     "build": "npm run ts:build",
-    "prod:serve": "node dist/server.js",
+    "prod:serve": "node dist/index.js",
     "dev": "cross-env NODE_ENV=development ts-node index.ts",
     "nodemon": "nodemon",
     "heroku-postbuild": "npm run client:install && npm run client:build"
