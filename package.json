@@ -23,8 +23,8 @@
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "start": "node dist/server.js",
-    "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src",
+    "start": "node dist/server.ts",
+    "postinstall": "tsc",
     "dev": "cross-env NODE_ENV=development ts-node server.ts",
     "nodemon": "nodemon",
     "client:install": "npm install --prefix client",
